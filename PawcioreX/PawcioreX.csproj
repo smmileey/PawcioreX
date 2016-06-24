@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AB7FA699-E2E4-4621-8F12-AE38DB65E9F8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PawcioreX</RootNamespace>
+    <AssemblyName>PawcioreX</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClipboardListener.cs" />
+    <Compile Include="CustomButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DateTimeMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DateTimeMod.Designer.cs">
+      <DependentUpon>DateTimeMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnumTypes.cs" />
+    <Compile Include="FixedRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaletteBackColor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PaletteBackColor.Designer.cs">
+      <DependentUpon>PaletteBackColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaletteFontColor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PaletteFontColor.Designer.cs">
+      <DependentUpon>PaletteFontColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Documentation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documentation.Designer.cs">
+      <DependentUpon>Documentation.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DateTimeMod.resx">
+      <DependentUpon>DateTimeMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documentation.resx">
+      <DependentUpon>Documentation.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Resource Include="Resources\user.rtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\programmer.rtf" />
+    <None Include="Resources\Save_6530.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_Open_32xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewFile_6276.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrintDocumentControl_697.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Redo_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow_UndoRevertRestore_16xLG_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\format_Bold_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\format_Italics_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\format_Underline_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\strikeout 16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subscript 16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\superscript.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\font_decrease.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\font_increase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FontColor_11146_24.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundColor_326_32.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palette %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HackToolbarBackColor.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repeat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cut_6523.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy_6524.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paste_6520.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text_center_alignment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text_right_alignment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text_align_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imageeee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\date_and_time.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pawel.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

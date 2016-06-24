@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PawcioreX.AlmostStack&lt;T&gt;">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAgABAQAAACAAAAAAAAAAABACAA=</HashCode>
+      <FileName>AlmostStack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PawcioreX.CustomButton">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAIAAAAAQCAAABAAAAGAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>CustomButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PawcioreX.DateTimeMod">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAACAAABAAACCAAAACAAAYAAAAAGAAABAAAAA=</HashCode>
+      <FileName>DateTimeMod.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PawcioreX.FixedRichTextBoxcs">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>FixedRichTextBoxcs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PawcioreX.mainForm">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <NestedTypes>
+      <Class Name="PawcioreX.mainForm.RtfState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>mainForm.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>aMNW/38XUryWhLr5Z+r7/3+Lrh/p/i7+/7R2T//f/xw=</HashCode>
+      <FileName>mainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PawcioreX.Program">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PawcioreX.modalDialogFindText">
+    <Position X="7.5" Y="2.25" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="PawcioreX.modalDialogFindText.TextHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Search.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="PawcioreX.modalDialogFindText.DoubleTextHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Search.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="PawcioreX.modalDialogFindText.ButtonClickHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Search.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>YAQggAIQAGigIhgCgQGAAAEDAoUCkCAAYAAAEBAIQAQ=</HashCode>
+      <FileName>Search.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PawcioreX.Properties.Resources">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QDAgiBAmAgCEABAAAUABEEACESgAojAAIhACAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PawcioreX.Properties.Settings">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
